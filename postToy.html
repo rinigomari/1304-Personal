@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Design/postToy.css">
+    <link rel="stylesheet" href="/Design/background.css">
+    <link rel="stylesheet" href="/Design/alert.css">
+    <script src="/Javascript/postToy.js" defer></script>
+    <title>Post Toy</title>
+</head>
+<body>
+    <div class="header">
+        <img src="/Images/Traders.png" alt="logo" onclick="goHome()">
+        
+    </div>
+    <div class="main-div">
+        <div class="post-div">
+            <h1>Post an Item</h1>
+            <div class="error" id="error"></div>
+            <label class= "importImg" for="avatar">
+                <img src="/Images/Vector.png" alt="logo">
+            </label>
+            <input type="file" id="avatar" accept="image/png, image/jpg">
+            <input type="text" name="itemName" id="itemName" placeholder="Enter item name">
+            <select name="" id="dropDown">
+                <option value="Good Condition">Good Condition</option>
+                <option value="Like new">Like new</option>
+                <option value="Mint Condition">Mint Condition</option>
+            </select>
+            <input type="text" name="retailPrice" id="retailPrice" placeholder="Retail Price">
+            <div class="description"> 
+                <textarea id="description" placeholder="Enter a description"></textarea>
+            </div>
+            <button type="submit" onclick="post()">Post</button>
+        </div>
+    </div>
+</body>
+</html>

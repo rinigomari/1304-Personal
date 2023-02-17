@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap);
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+
+}
+
+.login-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-div h1 {
+    font-family: 'Montserrat';
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 78px;
+    color: #BBB4AB;
+    text-align: center;
+    margin-bottom: 80px;
+    
+}
+
+.login-div p {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+}
+
+.header img {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 300px;
+    height: 300px;
+}
+
+.login-div a {
+    color: #BBB4AB;
+}
+
+.login-div a:hover {
+    color: #4DFF00;
+}
+
+.login-div input {
+    width: 650px;
+    height: 70px;
+    border: 1px solid #BBB4AB;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #BBB4AB;
+    background-color: #1E1E1E;
+}
+
+.login-div input::placeholder {
+    padding-left: 30px;
+}
+
+.login-div button {
+    width: 50%;
+    height: 61px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    background-color: #BBB4AB;
+    padding-left: 30px;
+    margin-left: 165px;
+    margin-bottom: 60px;
+
+}
+
+@media only screen and (max-width: 600px) { 
+    .header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .login-div h1 {
+        text-align: center;
+        margin-left: 10px;
+        font-size: 65px;
+        margin-bottom: 20px;
+    }
+
+    .login-div input {
+        width: 250px;
+        font-size: 17px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .login-div input::placeholder {
+        text-align: left;
+        padding-left: 0px;
+        padding-right: 1500px;
+    }
+
+    .login-div button {
+        font-size: 25px;
+        margin-left: 80px;
+        width: 150px;
+        margin-bottom: 50px;
+    }
+
+    .login-div p {
+        font-size: 20px;
+    }
+}

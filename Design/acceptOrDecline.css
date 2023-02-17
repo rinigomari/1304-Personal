@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap);
+
+.post-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+
+}
+
+.leftside img {
+    width: 340px;
+    height: 480px;
+}
+
+.rightside {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.post-div h1 {
+    font-family: 'Montserrat';
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #BBB4AB;
+    margin-right: 700px;
+}
+
+.post-div p {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+}
+
+.leftside img {
+    width: 550px;
+    height: 650px;
+    margin-bottom: 40px;
+    border: 1px solid white;
+    margin: 95px;
+    padding: 15px;
+}
+
+.leftside button {
+    width: 590px;
+    height: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1E1E1E;
+    margin-bottom: 60px;
+    border: 1px solid white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .post-div {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .leftside img {
+        width: 280px;
+        height: 280px;
+        margin-left: 280px;
+    }
+
+    .leftside button {
+        width: 320px;
+        height: 80px;
+        margin-left: 170px;
+    }
+
+    .post-div h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        font-size: 20px;
+        margin-left: 100px;
+    }
+
+    .post-div p {
+        width: 150px;
+        font-size: 20px;
+        margin-left: 100px;
+
+    }
+}
