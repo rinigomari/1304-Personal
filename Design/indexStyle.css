@@ -65,6 +65,10 @@
     margin-right: 30px;
 }
 
+.close {
+    cursor: pointer;
+}
+
 #profile {
     display: none;
 }
@@ -123,6 +127,33 @@
 .postings {
     display:flex;
     justify-content: space-around;
+}
+
+.popUp {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 850px;
+    height: 150px;
+    margin-right: 90px;
+    font: 400 20px 'Montserrat';
+    border: 1px solid white;
+    color: #BBB4AB;
+    font: 30px 'Montserrat';
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.popUp button {
+    width: 110px;
+    height: 40px;
+    background-color: #1E1E1E;
+    border: 1px solid white;
+    font: 15px 'Montserrat';
+    color: #BBB4AB;
 }
 
 @media only screen and (max-width: 600px) {
@@ -240,5 +271,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .popUp {
+        display: none;
+        /* position: absolute; */
+        width: 280px;
+        height: 150px;
+        font: 15px 'Montserrat';
+    }
+    .popUp button {
+        width: 90px;
+        height: 40px;
+        margin-left: 9px;
     }
 }

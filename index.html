@@ -13,12 +13,20 @@
 <body>
     <div class="header">
         <img src="/Images/Traders.png" alt="logo">
-        <input type="text" class="search" placeholder="Search" name="search">
+        <input type="text" class="search" placeholder="Search" name="search" id="search">
         <button type="text" class="postItem" onclick="redirect()">Post an Item</button>
         <div class="leftside">
             <label class="notif" for="notification">
                 <img src="/Images/notifications.png" alt="notification">
             </label>
+            <div class="popUp" id="popUp">
+                <ul id="ul">
+                    
+                </ul>
+                <button class="close">
+                    &times;
+                </button>
+            </div>
             <label class="acc" for="profile">
                 <img src="/Images/account.png" alt="account">
             </label>

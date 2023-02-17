@@ -27,7 +27,7 @@ function sendOffer() {
     }
     let users = [];
     let offers = [];
-    let offer = {avatar, senderName, itemName, dropDown, retailPrice, description};
+    let offer = {id: Math.random() + 10000 * 1000, avatar, senderName, itemName, dropDown, retailPrice, description};
     if (JSON.parse(localStorage.getItem("offers") !== null)) {
         offers = JSON.parse(localStorage.getItem("offers"));
     }
@@ -53,4 +53,5 @@ function sendOffer() {
         localStorage.setItem("offers", JSON.stringify(offers));
         localStorage.setItem("users", JSON.stringify(updatedUsers));
     }
+    window.location.href = "index.html";
 }
